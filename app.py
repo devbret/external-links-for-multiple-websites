@@ -58,6 +58,6 @@ def save_links_as_json(external_links, internal_links, filename='links.json'):
     with open(filename, 'w') as file:
         json.dump(data, file, indent=2)
 
-start_urls = ['https://www.exampleone.com/', 'https://www.exampletwo.com/', 'https://www.examplethree.com/']
+start_urls = ['https://www.example.com/',]
 external_links, internal_links = crawl_site(start_urls)
 save_links_as_json(external_links, internal_links)
